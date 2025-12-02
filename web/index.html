@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Rehbere kaydetmeden WhatsApp mesajı gönder.">
+
+  <!-- iOS meta tags & icons (V2 EKLEDİK Kİ YENİSİNİ İNDİRSİN) -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Directo">
+  
+  <!-- Cache Busting: ?v=2 ile tarayıcıyı zorluyoruz -->
+  <link rel="apple-touch-icon" href="icons/Icon-192.png?v=2">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png?v=2"/>
+
+  <title>Directo</title>
+  <link rel="manifest" href="manifest.json?v=2">
+
+  <!-- BEYAZ EKRAN ÇÖZÜMÜ + YEŞİL YÜKLEME HALKASI -->
+  <style>
+    body {
+      background-color: #111B21; /* WhatsApp Koyu Rengi */
+      margin: 0;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .loading {
+      width: 50px;
+      height: 50px;
+      border: 5px solid rgba(37, 211, 102, 0.3);
+      border-radius: 50%;
+      border-top-color: #25D366;
+      animation: spin 1s ease-in-out infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Yüklenirken Dönen Yeşil Halka -->
+  <div class="loading"></div>
+
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

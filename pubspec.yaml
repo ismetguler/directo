@@ -1,0 +1,45 @@
+name: directo
+description: "Rehbere kaydetmeden mesaj atma uygulamasi."
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Ikonlar ve kutuphaneler
+  cupertino_icons: ^1.0.8
+  url_launcher: ^6.3.2
+  shared_preferences: ^2.5.3
+  qr_flutter: ^4.1.0
+  google_fonts: ^6.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  # Ikon olusturucu paket burasi
+  flutter_launcher_icons: ^0.14.4
+
+# --- IKON AYARLARI BURADA ---
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon.png"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/icon.png"
+    background_color: "#25D366" # WhatsApp Yesili arka plan
+    theme_color: "#25D366"
+
+flutter:
+  uses-material-design: true
+
+  # Resim klasorunu buraya tanimladik
+  assets:
+    - assets/

@@ -1,27 +1,24 @@
 # 💬 Directo
 
-> A privacy-focused, zero-install messaging utility built with Flutter Web.
+> Open a WhatsApp chat with any number without saving it to your contacts.
 
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
 ![PWA](https://img.shields.io/badge/PWA-5A0FC8?logo=pwa&logoColor=white)
 
 ## About
 
-**Directo** is a lightweight real-time chat built as a Progressive Web App — no installation, no contact integration, just fast and private messaging that opens instantly in the browser.
+**Directo** is a small Progressive Web App built with Flutter Web. You type a phone number (and an optional message), and it opens a WhatsApp chat with that number through a `wa.me` link. The number never goes into your phonebook.
 
 ## Features
 
-- ⚡ Zero-install: runs straight from the browser as a PWA
-- 💬 Real-time messaging powered by Firebase
-- 🔒 Privacy-first: no phonebook/contact access required
-- 📱 Responsive, mobile-first UI
+- ⚡ Zero-install: runs in the browser as a PWA
+- 🔒 No contact access, no account, no server
+- 📱 Mobile-first UI
 
 ## Tech stack
 
 - **Flutter Web** (Dart)
-- **Firebase** (Firestore / Auth)
-- **PWA** (installable, offline-aware shell)
+- **PWA** (installable)
 
 ## Run locally
 
@@ -33,4 +30,4 @@ flutter run -d chrome
 ```
 
 ---
-Made by [İsmet Güler](https://github.com/ismetguler) · [Portfolio](https://ismetguler.github.io)
+Built with AI-assisted development · [Portfolio](https://ismetguler.github.io)
